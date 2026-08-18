@@ -3,7 +3,12 @@ import { NextResponse } from "next/server";
 
 export const runtime = "nodejs";
 
-const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+// Lazy so builds/deploys without OPENAI_API_KEY don't crash at module load
+let _client = null;
+function getClient() {
+  if (!_client) _client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+  return _client;
+}
 
 /* -------- Local fallback so UX never blocks -------- */
 function localSummarize(snippet, filename = "unknown") {
@@ -139,7 +144,7 @@ RFP TEXT (truncated):
 
     let textOut = "";
     try {
-      const resp = await client.responses.create({
+      const resp = await getClient().responses.create({
         model: "gpt-4o-mini",
         temperature: 0,
         max_output_tokens: 1200,
@@ -156,7 +161,7 @@ RFP TEXT (truncated):
         return NextResponse.json(localSummarize(snippet, filename));
       }
       // One-shot fallback to chat.completions for SDK quirks
-      const cc = await client.chat.completions.create({
+      const cc = await getClient().chat.completions.create({
         model: "gpt-4o-mini",
         temperature: 0,
         messages: [

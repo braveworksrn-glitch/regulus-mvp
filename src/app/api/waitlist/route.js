@@ -14,7 +14,14 @@ function getIp(req) {
 
 export async function POST(req) {
   try {
-    const { email, source = "ui" } = await req.json();
+    const {
+      email,
+      source = "ui",
+      segment = null,
+      budget_band = null,
+      sub_tier_interest = false,
+      founding_member = false,
+    } = await req.json();
     const e = String(email || "").trim().toLowerCase();
 
     // Basic email sanity check
@@ -41,7 +48,15 @@ export async function POST(req) {
     const { error } = await admin
       .from("waitlist")
       .upsert(
-        { email: e, source, user_agent: ua, ip, meta: {} },
+        {
+          email: e,
+          source,
+          user_agent: ua,
+          ip,
+          // segment/budget captured in meta so no schema change is required;
+          // dedicated columns exist in supabase/migrations/001_regulus_game.sql
+          meta: { segment, budget_band, sub_tier_interest, founding_member },
+        },
         { onConflict: "email" }
       );
 

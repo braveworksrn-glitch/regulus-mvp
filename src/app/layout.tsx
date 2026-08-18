@@ -7,9 +7,9 @@ const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Regulus — RFP Quick Reader",
+  title: "Regulus — Own a real lot. Direct real crews.",
   description:
-    "Regulus helps you go from RFP drop to Go/No-Go fast. Upload a PDF/DOCX for an instant at-a-glance summary.",
+    "A title-cured land shop with a board-game soul. Real lots, real crews, verified photos — honest itemized pricing, no financial promises.",
 };
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
