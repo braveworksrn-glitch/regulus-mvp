@@ -97,3 +97,14 @@ Five agents, one human gate, one client gate:
 - NIH NOT-OD-25-132 (AI-developed applications ineligible)
 - Market data: Giving USA 2026; GrantWatch/Instrumentl/Submittable win-rate and award-size stats; SBIR.gov agency success rates; Blue Haven "Pay Upon Award" and Grant Engine fee structures
 - Data sources: Grants.gov API (free, rate-limited), IRS 990 bulk data + ProPublica Nonprofit Explorer API (public domain), Candid API license (no resale)
+
+## 6. Locked decisions (v1.1)
+
+- **Business type:** small human-services nonprofits ($250k–$1M budget) — youth, food security, housing, re-entry — in one launch state, selected by 990 signal: program revenue present, grant revenue absent. SBIR track deferred to phase 2.
+- **Offer stack:**
+  1. Free "Grant Gap Report" (auto-generated from 990 + matcher; the outreach hook)
+  2. $299/mo Grant Pipeline subscription: funder calendar + 2 human-reviewed, client-approved foundation applications/month, month-to-month
+  3. Flat completion fee on award: $1,500 (<$25k awards) / $2,500 (≥$25k), pre-agreed, invoiced on award letter, payable from unrestricted funds only
+- **Deliverable:** monthly client-approved application packets (narrative, budget, attachments checklist, per-claim provenance), writer sign-off + client one-click approval before submission; live pipeline view.
+- **Scope guard:** foundation grants only for first 6–12 months — no federal applications (eliminates §1001/FCA certification exposure, AOR credential issues, and NIH AI-eligibility rules; 2–6 month decision cycles).
+- **Pre-launch:** fundraising-counsel registration in launch state; attorney review of the subscription+completion-fee contract; cold email/LinkedIn outreach only.
