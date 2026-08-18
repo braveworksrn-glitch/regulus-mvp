@@ -108,3 +108,35 @@ Five agents, one human gate, one client gate:
 - **Deliverable:** monthly client-approved application packets (narrative, budget, attachments checklist, per-claim provenance), writer sign-off + client one-click approval before submission; live pipeline view.
 - **Scope guard:** foundation grants only for first 6–12 months — no federal applications (eliminates §1001/FCA certification exposure, AOR credential issues, and NIH AI-eligibility rules; 2–6 month decision cycles).
 - **Pre-launch:** fundraising-counsel registration in launch state; attorney review of the subscription+completion-fee contract; cold email/LinkedIn outreach only.
+
+## 7. Gauntlet results (v2) — supersedes §6 pricing
+
+A 13-agent virtual gauntlet (6 adversarial experts: state AG charities attorney, federal grants/FCA counsel, contracts attorney, GPA ethics veteran, community-foundation program officer, fractional CFO; 6 market personas: 4 nonprofit EDs/treasurer, SBIR founder, rival grant writer; plus red-team synthesis) tested five zero-upfront structures. Verdict: **GO-WITH-FIXES**, on conditions.
+
+### Consensus fatal flaws found
+1. **Any award-triggered fee to a nonprofit is contingent compensation, full stop.** "Flat, not percentage" cures nothing: CA Gov. Code §12599.1 requires counsel be paid a fixed fee not computed on funds raised; NY Exec. Law §171-a defines counsel as non-contingent. The v1.1 completion fee forfeits counsel status in strict states and violates GPA/AFP codes; the subscription framed as a device to "defuse" them is evidence of intent, worse than the naked arrangement.
+2. **Deferred/accrued billing triggered by an award is a sham** — substance over form; unanimous expert kill (ironically the variant most EDs wanted to sign).
+3. **"Payable only from unrestricted funds" is cosmetic** (money is fungible; drafted as a condition it hands clients a nonpayment defense) and hides federal exposure: many target orgs hold federal pass-through dollars (CDBG/ESG/TANF), creating 2 CFR 200.421 allowability questions in their own audits.
+4. **Capacity math was overstated 2–4x**: one writer ≈ 12 apps/month, so 10–12 clients at 4–6 apps/client/year — not 15–25 clients at 2/month. And 30–50 lookalike apps/month into one state's foundation pool gets fingerprinted within two cycles; the 35–60% win rate collapses toward 5–15% once program officers tag the template.
+5. **Pure pay-on-award (variant A) never breaks even** even before bonds/compliance; registering as a "professional solicitor" is the wrong frame, risks voidable contracts, and is a scarlet letter to boards and funders.
+
+### Adopted structure: "E-hybrid" — $0 at signing, nothing contingent
+**Nonprofit track (cash engine):**
+- **$0 moves at signing. First application free, unconditionally** (win or lose) — the lawful pilot.
+- Thereafter **$1,000 flat per submitted application, vesting at submission, owed win or lose** — never on award, never forgiven for losing. Billed in 3 monthly installments of $333 starting net-60 from submission; ACH authorization at signing; monthly deferred-balance statements.
+- Either party exits in first 60 days for $0; vested fees survive termination; no tail clause (no award fee exists).
+- Contract hygiene: unrestricted-funds language as representation/covenant, never a condition; ED attestation + board resolution; 6-year retention of drafts/provenance/approvals; federal-funds intake screen; no custody of funds; register as fundraising counsel in launch state before first cold email. **Operational proof of non-contingency: actually invoice and collect from clients whose applications lost.**
+- Volume discipline: 4–6 apps/client/year, ≤2–3 clients per funder per cycle, per-client voice with ED co-authoring the needs statement, mandatory 30-min pre-submission rehearsal call, one-line disclosure of paid writing support, hedged Grant Gap Report language ("your 990 suggests — does this match your books?").
+- Writer as contractor ($400–600/finished app) until 10+ paying clients; cash trough ~-$20–30k (only bootstrappable variant per CFO).
+
+**SBIR track (runs in parallel from day one — where pure pay-on-win lives lawfully):**
+- $0 upfront; flat fee fixed at signing ($5k awards <$200k / $10–15k above); one revise-and-resubmit included; mutual walk-away after two cycles; fee excluded from award budgets; consultant disclosure mandatory; bona-fide-agency file (FAR 52.203-5) before first client; underwritten at 15–25% win rates; never the plan's oxygen.
+
+**Launch state:** TX, AZ, CO, or FL. Never CA or NY at launch. Counsel opinion in hand before first outreach email.
+
+### Non-negotiable conditions of the GO
+1. No award-contingent dollar is ever charged to a nonprofit — if zero-unless-you-win is required for nonprofits, that track is a NO-GO and the business is an SBIR consultancy.
+2. Volume/disclosure/rehearsal caps adopted even though they halve per-state revenue — they protect the win rate the model depends on.
+3. Purge all "defuse the ethics codes" framing from internal and marketing documents.
+
+Accepted loss: the most contingency-demanding prospects (the twice-burned ED persona) will walk; the free first application + deferred installments is the closest lawful approximation of what they want.
