@@ -1,37 +1,67 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* ------------------------------------------------------------------
+   Regulus design tokens
+   Deep navy ink on warm paper, one restrained amber-gold accent.
+   Consumed by all streams as CSS variables:
+   --bg --ink --muted --accent --card --line
+   ------------------------------------------------------------------ */
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+:root {
+  color-scheme: light;
+  --bg: #f7f4ee;      /* warm paper */
+  --ink: #17233b;     /* deep navy ink */
+  --muted: #5b6474;   /* cool slate for secondary text */
+  --accent: #9c7420;  /* restrained amber-gold (dark enough for text on paper) */
+  --card: #fffdf8;    /* raised paper surface */
+  --line: #e4ddce;    /* warm hairline */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    color-scheme: dark;
+    --bg: #0e1524;    /* deep navy night */
+    --ink: #ece8dd;   /* warm paper text */
+    --muted: #97a0b2;
+    --accent: #d2a84e; /* brighter gold for dark ground */
+    --card: #151f33;
+    --line: #263149;
   }
 }
 
+/* Map tokens into the Tailwind v4 theme so utilities like
+   bg-bg, text-ink, text-muted, text-accent, bg-card, border-line work. */
+@theme inline {
+  --color-bg: var(--bg);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-card: var(--card);
+  --color-line: var(--line);
+  --font-display: var(--font-fraunces), Georgia, "Times New Roman", serif;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
-/* Lock light theme visuals */
-:root { color-scheme: light; }
-html, body { background: #f8fafc; }
-
-/* Simple ad slot placeholder style */
-.ad-slot {
-  display:flex; align-items:center; justify-content:center;
-  border:1px dashed #cbd5e1; color:#475569; background:#eef2ff;
-  font-size:12px;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
+  text-rendering: optimizeLegibility;
 }
 
+::selection {
+  background: color-mix(in srgb, var(--accent) 28%, transparent);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Hairline rule used between page sections */
+.rule {
+  border: 0;
+  border-top: 1px solid var(--line);
+}
