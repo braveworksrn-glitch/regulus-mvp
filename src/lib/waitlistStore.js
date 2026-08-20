@@ -19,7 +19,12 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import crypto from "node:crypto";
 
-const DATA_DIR = path.join(process.cwd(), ".data");
+// On Vercel/serverless the project dir is read-only; /tmp works but is
+// EPHEMERAL (per-instance, wiped on redeploy) — set the Supabase env vars
+// for durable storage in production.
+const DATA_DIR =
+  process.env.DATA_DIR ||
+  (process.env.VERCEL ? "/tmp/regulus-data" : path.join(process.cwd(), ".data"));
 const DATA_FILE = path.join(DATA_DIR, "waitlist.json");
 
 /* ------------------------------------------------------------------ */

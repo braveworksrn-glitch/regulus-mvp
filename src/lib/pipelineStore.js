@@ -59,7 +59,13 @@ const LETTER_VALUES = ["yes", "no", "unclear"];
 /* ------------------------------------------------------------------ */
 
 function dataDir() {
-  return process.env.PIPELINE_DATA_DIR || path.join(process.cwd(), ".data");
+  // On Vercel/serverless the project dir is read-only; /tmp works but is
+  // EPHEMERAL (per-instance, wiped on redeploy). Fine for a live demo —
+  // the store re-seeds itself from src/lib/seed/trial-client.js.
+  return (
+    process.env.PIPELINE_DATA_DIR ||
+    (process.env.VERCEL ? "/tmp/regulus-data" : path.join(process.cwd(), ".data"))
+  );
 }
 
 function dataFile() {
