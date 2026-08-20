@@ -47,7 +47,7 @@ export default function WaitlistCta({ ein }) {
       <p>
         Regulus is opening a done-for-you research service for small nonprofits:
         we map the local funders and draft the materials; your team reviews and
-        submits its own applications. Join the waitlist and we'll reach out as
+        submits its own applications. Join the waitlist and we&rsquo;ll reach out as
         spots open.
       </p>
       {status === "done" ? (

@@ -1,4 +1,9 @@
 ﻿node_modules
 .next
 .env*
+!.env.example
 
+# local waitlist store
+.data/
+
+tsconfig.tsbuildinfo

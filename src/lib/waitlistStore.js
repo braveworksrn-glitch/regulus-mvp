@@ -37,8 +37,10 @@ function normalizeSource(source) {
 
 function normalizeEin(ein) {
   if (ein === undefined || ein === null) return null;
-  const s = String(ein).trim().replace(/[^0-9-]/g, "").slice(0, 12);
-  return s || null;
+  const raw = String(ein).trim().toLowerCase();
+  if (/^demo-[a-z0-9-]{1,40}$/.test(raw)) return raw;
+  const s = raw.replace(/[^0-9-]/g, "").slice(0, 12);
+  return /\d/.test(s) ? s : null;
 }
 
 export function isValidEmail(email) {

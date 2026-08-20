@@ -48,7 +48,7 @@ function UnavailableNotice({ ein }) {
       <div className="rg-notice">
         <h1>We could not reach public filing data right now</h1>
         <p>
-          The public IRS 990 source we read from isn't responding at the
+          The public IRS 990 source we read from isn&rsquo;t responding at the
           moment{ein ? <> for EIN <strong>{ein}</strong></> : null}. Nothing is
           wrong on your end — please try again in a few minutes.
         </p>
@@ -73,11 +73,11 @@ function NotFoundNotice({ ein }) {
   return (
     <Shell>
       <div className="rg-notice">
-        <h1>We couldn't find a filing for that organization</h1>
+        <h1>We couldn&rsquo;t find a filing for that organization</h1>
         <p>
           No public IRS 990 data came back for <strong>{ein}</strong>. EINs are
           nine digits — it may be worth double-checking the number, or searching
-          by the organization's name instead.
+          by the organization&rsquo;s name instead.
         </p>
         <div className="rg-btn-row">
           <Link href="/report/search" className="rg-btn-solid">
@@ -226,7 +226,7 @@ function FundingCategories({ gap }) {
       <p className="rg-section-sub">
         Award bands describe the funding programs themselves — typical ranges
         published or reported for these categories — not any amount for a
-        specific organization. Fit and eligibility always depend on the funder's
+        specific organization. Fit and eligibility always depend on the funder&rsquo;s
         own criteria.
       </p>
       <div className="rg-cards">
