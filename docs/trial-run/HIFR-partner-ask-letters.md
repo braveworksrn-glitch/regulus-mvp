@@ -15,10 +15,10 @@ I lead Home Is the Foundation Restoration, a faith-based home-repair effort in W
 
 Two asks, one of them time-sensitive:
 
-1. **If Frontier is applying for FY2026 USDA Housing Preservation Grant funds (the window closes September 8), we would like to be named as a construction and volunteer-labor partner for Morgan County homes.** Our labor model and materials pipeline stretch grant dollars further per home, and we can document every hour and material contributed.
+1. **If Frontier is applying for FY2026 USDA Housing Preservation Grant funds (the window closes September 8), we would like to be named as a construction and volunteer-labor partner for Morgan County homes.** Our labor model and materials pipeline stretch grant dollars further per home, and we commit to documenting every hour and material contributed on any partnered home.
 2. Longer term, we would welcome a referral relationship for Morgan County homes that fit our scope, and we would like to ask whether Frontier would consider serving as our **fiscal sponsor** while our separate 501(c)(3) entity is being formed — several regional funders we plan to approach accept sponsored applications.
 
-I can bring a one-page capability statement and photographs of current cases to a call or a visit any day this week. [CLIENT TO PROVIDE: phone + email signature block]
+I can bring a one-page capability statement to a call or a visit any day this week. [CLIENT: attach case photographs ONLY if consented photos exist — otherwise leave this out.] [CLIENT TO PROVIDE: phone + email signature block]
 
 With respect for what Frontier has built across this region,
 [NAME, TITLE]

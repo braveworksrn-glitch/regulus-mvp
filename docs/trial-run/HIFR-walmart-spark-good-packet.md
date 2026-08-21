@@ -24,6 +24,11 @@ Grants are awarded by individual stores to organizations **serving that store's 
 
 *Guides report short fields (~500 characters). Both a short and an expanded version are below; the writer should fit whichever fields the live form presents. Every sentence traces to the source map in Part 4.*
 
+**⚠ TENSE GATE (adversarial-review fix #1):** the drafts below describe operations in the present tense. They may be used **only if deep intake confirms completed projects**. If the service-history table records zero completed projects, use the launch-stage variant instead — present-tense track-record claims over an empty case log are misrepresentation the client would attest to under his own name.
+
+**Launch-stage project description (487 chars — default until intake proves otherwise):**
+> Home Is the Foundation Restoration is launching critical home repair — roof leaks, failing floors, wheelchair ramps, and winterization — for elderly and low-income homeowners in Morgan County, at no cost to the families. Volunteer crews and donated or reclaimed materials will do the work; homeowners join in as they're able. This grant buys our first season's repair materials we cannot salvage — roofing fasteners, sealants, treated lumber, and insulation — for homes in the [STORE] service area.
+
 **Project description (short — 498 chars):**
 > Home Is the Foundation Restoration makes critical home repairs — roof leaks, failing floors, wheelchair ramps, and winterization — for elderly and low-income homeowners in Morgan County, at no cost to the families. Volunteer crews and donated or reclaimed materials do the work; homeowners join in as they're able. This grant buys the repair materials we cannot salvage: roofing fasteners, sealants, treated lumber, and insulation for homes served from the [STORE] service area this winter.
 
